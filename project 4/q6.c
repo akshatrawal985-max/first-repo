@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, j, k, n = 5;
+
+    for(i = n - 1; i >= 0; i--)
+    {
+        for(j = 1; j <= n - i; j++)
+        {
+            printf("%d", j);
+        }
+
+        for(k = 0; k < i * 3; k++)
+        {
+            printf(" ");
+        }
+
+        for(j = n - i; j >= 1; j--)
+        {
+            printf("%d ", j);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
